@@ -1,0 +1,70 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "hello1",
+  "password": "hello1"
+}
+
+###
+
+GET http://localhost:5000/api/auth/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTEyOTgzMjkyMTZmYTJkOTg4N2U0MjciLCJpYXQiOjE2Mjg2NjgzNTB9.7fTUOoVtHOunTo-6Srj2abuU6j2fou29zuRhaELYYw4
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "hello",
+  "password": "hello"
+}
+
+###
+
+POST http://localhost:5000/api/vocabularys
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTEyOTgzMjkyMTZmYTJkOTg4N2U0MjciLCJpYXQiOjE2Mjg2NjgzNTB9.7fTUOoVtHOunTo-6Srj2abuU6j2fou29zuRhaELYYw4
+
+{
+  "keyword": "React2333",
+  "means": "React233",
+  "example" :" helo",
+  "url": "react.com"
+}
+
+###
+
+GET http://localhost:5000/api/vocabularys
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTFhOTI0NWJiZmY0YzE4YzBiNzQ3ZGEiLCJpYXQiOjE2MjkxMzIxMjR9.CCIU7lFUXefkY-lKYNdEzpVgnA_ivgZRhl0TpoyhwDM
+
+###
+
+GET http://localhost:5000/api/vocabularys/days
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTFhOTI0NWJiZmY0YzE4YzBiNzQ3ZGEiLCJpYXQiOjE2MjkxMzIxMjR9.CCIU7lFUXefkY-lKYNdEzpVgnA_ivgZRhl0TpoyhwDM
+
+###
+
+PUT http://localhost:5000/api/vocabularys/611a926fbbff4c18c0b747db
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTFhOTI0NWJiZmY0YzE4YzBiNzQ3ZGEiLCJpYXQiOjE2MjkxMzIxMjR9.CCIU7lFUXefkY-lKYNdEzpVgnA_ivgZRhl0TpoyhwDM
+
+{
+  "keyword": "Vue1",
+   "means": "Vue1",
+  "description": "VUEEEEE1",
+  "url": "https://vuejs.org1",
+  "lernDay": "2021-08-11T08:01:11.211+00:00",
+  "status": 7
+}
+
+###
+
+DELETE http://localhost:5000/api/vocabularys/61138348dd7be82afca7977e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTEyOTgzMjkyMTZmYTJkOTg4N2U0MjciLCJpYXQiOjE2Mjg2NjgzNTB9.7fTUOoVtHOunTo-6Srj2abuU6j2fou29zuRhaELYYw4
+###
+
+GET  https://api.mymemory.translated.net/get?q=discusstion&langpair=en|vi&key=d10fa79c444644a26251&ip=93.81.217.71
+
